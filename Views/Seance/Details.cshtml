@@ -1,0 +1,57 @@
+@model MiniProjet_alpha.Model.Seance
+
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Fileres</h4>
+    <hr />
+    <dl class="row">
+   <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdSeance)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdSeance)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dateseance)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dateseance)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Heuredebut)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Heuredebut)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Heurefin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Heurefin)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ClasseId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ClasseId)
+        </dd>
+                </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProfesseurId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProfesseurId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdSeance">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

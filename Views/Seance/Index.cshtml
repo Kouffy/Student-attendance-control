@@ -1,0 +1,59 @@
+@model IEnumerable<MiniProjet_alpha.Model.Seance>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+              <th>
+                @Html.DisplayNameFor(model => model.Dateseance)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Heuredebut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Heurefin)
+            </th>
+                <th>
+                @Html.DisplayNameFor(model => model.ClasseId)
+            </th>
+                   <th>
+                @Html.DisplayNameFor(model => model.ProfesseurId)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dateseance)
+            </td>
+            <td>
+                   @Html.DisplayFor(modelItem => item.Heuredebut)
+            </td>
+             <td>
+                   @Html.DisplayFor(modelItem => item.Heurefin)
+            </td>
+                 <td>
+                   @Html.DisplayFor(modelItem => item.ClasseId)
+            </td>
+                       <td>
+                   @Html.DisplayFor(modelItem => item.ProfesseurId)
+            </td>
+                                    <td>
+                <a asp-action="Edit" asp-route-id="@item.IdSeance">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdSeance">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdSeance">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
