@@ -1,47 +1,55 @@
-@model MiniProjet_alpha.Model.Etudiant
+
+@model MiniProjet_alpha.ViewModels.EtudiantViewModel
 
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
 
-<h4>Etudiants</h4>
+
+<h1>Ajouter un étudiant</h1>
+
+<h4>Gestion des étudiants</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Nom" class="control-label"></label>
-                <input asp-for="Nom" class="form-control" />
-                <span asp-validation-for="Nom" class="text-danger"></span>
+                <label asp-for="Etudiant.Nom" class="control-label"></label>
+                <input asp-for="Etudiant.Nom" class="form-control" />
+                <span asp-validation-for="Etudiant.Nom" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Prenom" class="control-label"></label>
-                <input asp-for="Prenom" class="form-control" />
-                <span asp-validation-for="Prenom" class="text-danger"></span>
+                <label asp-for="Etudiant.Prenom" class="control-label"></label>
+                <input asp-for="Etudiant.Prenom" class="form-control" />
+                <span asp-validation-for="Etudiant.Prenom" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Matricule" class="control-label"></label>
-                <input asp-for="Matricule" class="form-control" />
-                <span asp-validation-for="Matricule" class="text-danger"></span>
+                <label asp-for="Etudiant.Matricule" class="control-label"></label>
+                <input asp-for="Etudiant.Matricule" class="form-control" />
+                <span asp-validation-for="Etudiant.Matricule" class="text-danger"></span>
             </div>
              <div class="form-group">
-                <label asp-for="ClasseIdClasse" class="control-label"></label>
-                <input asp-for="ClasseIdClasse" class="form-control" />
-                <span asp-validation-for="ClasseIdClasse" class="text-danger"></span>
+                <label asp-for="Etudiant.ClasseIdClasse" class="control-label"></label>
+                <select asp-for="Etudiant.ClasseIdClasse"  class="form-control">
+                    @foreach (var item in Model.Classes)
+                    {
+                        <option value="@item.IdClasse">@item.Libelle</option>
+                    }
+                </select>
+                <span asp-validation-for="Etudiant.ClasseIdClasse" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
 </div>
 
 @section Scripts {

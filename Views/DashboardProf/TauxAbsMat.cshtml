@@ -1,0 +1,37 @@
+@model IEnumerable<MiniProjet_alpha.ViewModels.AdminDashboardViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class=" border rounded border-success bg-primary">
+        <h1 class="display-4">Taux d'absence dans votre matière</h1>
+    </div>
+
+       <div class="container" style="margin-top: 50px;">
+           <a asp-action="ListePresence" class="btn btn-primary">Liste de présence</a> |
+                <a asp-action="TauxAbsMat" class="btn btn-primary">Taux d'absence par étudiant dans votre matière</a>
+   </div>
+
+    <table class="table table-bordered table-hover table-striped" style="margin-top: 50px;">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model=>model.LibelleMatiere)</th>
+              <th>@Html.DisplayName("Taux D'absance Dans La Matiere")</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-info">
+                <td>
+                   @Html.DisplayFor(modelItem => item.LibelleMatiere)
+                </td> 
+                   <td>
+                    @Html.DisplayFor(modelItem => item.Countabs) %
+                </td> 
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

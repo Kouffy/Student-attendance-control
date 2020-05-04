@@ -1,0 +1,53 @@
+@model IEnumerable<MiniProjet_alpha.ViewModels.AdminDashboardViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class=" border rounded border-success bg-primary">
+        <h1 class="display-4">Liste de présence</h1>
+    </div>
+
+    <div class="container" style="margin-top: 50px;">
+           <a asp-action="TauxAbsEtu" class="btn btn-primary">Taux d'absence par étudiant dans votre matière</a> |
+                <a asp-action="TauxAbsMat" class="btn btn-primary">Taux d'absence dans votre matière</a>
+   </div>
+
+    <table class="table table-bordered table-hover table-striped" style="margin-top: 50px;">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model=>model.LibelleMatiere)</th>
+                <th>@Html.DisplayNameFor(model=>model.DateSeance)</th>
+                <th>@Html.DisplayNameFor(model=>model.NomComplet)</th>
+                <th>@Html.DisplayNameFor(model=>model.EstAbsent)</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-info">
+                <td>
+                   @Html.DisplayFor(modelItem => item.LibelleMatiere)
+                </td> 
+                   <td>
+                    @Html.DisplayFor(modelItem => item.DateSeance)
+                </td> 
+                   <td>
+                    @Html.DisplayFor(modelItem => item.NomComplet)
+                </td> 
+
+         @if(item.EstAbsent == 1)
+         {
+         <td>
+             Présent
+         </td>
+         }
+         else
+         {               
+            <td>Absent</td>      
+         }
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

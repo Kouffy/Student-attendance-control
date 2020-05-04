@@ -9,6 +9,7 @@ namespace MiniProjet_alpha.Model
         public int EstAbsant { get; set; }
         public int SeanceIdSeance { get; set; }
         public int EtudiantIdEtudiant { get; set; }
+        public DateTime DateAbsance { get; set; }
 
         public virtual Etudiant EtudiantIdEtudiantNavigation { get; set; }
         public virtual Seance SeanceIdSeanceNavigation { get; set; }

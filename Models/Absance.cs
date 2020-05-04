@@ -10,6 +10,9 @@ namespace MiniProjet_alpha.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdAbsance { get; set; }
+        [Required(ErrorMessage = "Veillier indiquer la date d'absance")]
+        [DataType(DataType.Date)]
+        public DateTime DateAbsance { get; set; }
 
         [Required(ErrorMessage = "Veillier indiquer labsance")]
         public int EstAbsant { get; set; }

@@ -1,0 +1,51 @@
+@model IEnumerable<MiniProjet_alpha.Model.Administrateur>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class=" border rounded border-success bg-primary">
+    <h1 class="display-4">Gestion des administrateurs</h1>
+</div>
+<p style="margin-top: 40px;">
+    <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary">Ajouter un administrateur</a>
+</p>
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
+        <tr>
+                <th>
+                @Html.DisplayNameFor(model => model.IdAdministrateur)
+            </th>
+       
+              <th>
+                @Html.DisplayNameFor(model => model.Prenom)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+        
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="table-info">
+              <td>
+                   @Html.DisplayFor(modelItem => item.IdAdministrateur)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                   @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+   
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdAdministrateur" class="btn btn-secondary">Modifier</a> |
+                <a asp-action="Details" asp-route-id="@item.IdAdministrateur" class="btn btn-secondary">Détails</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdAdministrateur" class="btn btn-danger">Supprimer</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

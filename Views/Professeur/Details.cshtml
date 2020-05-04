@@ -1,0 +1,56 @@
+@model MiniProjet_alpha.ViewModels.ProfesseurViewModel
+
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Détails</h1>
+
+<div>
+    <h4>Gestion des professeurs</h4>
+    <hr />
+     <dl class="row">
+   <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Professeur.IdProfesseur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Professeur.IdProfesseur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Professeur.Prenom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Professeur.Prenom)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Professeur.Nom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Professeur.Nom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayName("Matricule")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Professeur.Matericule)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Professeur.Dateembauche)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Professeur.Dateembauche)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayName("Matière")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LibelleMatiere)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Professeur.IdProfesseur" class="btn btn-primary">Modifier</a> |
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
+</div>

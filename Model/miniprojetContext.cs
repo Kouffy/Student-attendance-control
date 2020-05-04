@@ -57,6 +57,8 @@ namespace MiniProjet_alpha.Model
 
                 entity.Property(e => e.IdAbsance).HasColumnType("int(11)");
 
+                entity.Property(e => e.DateAbsance).HasDefaultValueSql("'0001-01-01 00:00:00.000000'");
+
                 entity.Property(e => e.EstAbsant).HasColumnType("int(11)");
 
                 entity.Property(e => e.EtudiantIdEtudiant).HasColumnType("int(11)");
@@ -211,12 +213,12 @@ namespace MiniProjet_alpha.Model
                     .HasName("IX_AspNetUserLogins_UserId");
 
                 entity.Property(e => e.LoginProvider)
-                    .HasColumnType("varchar(128)")
+                    .HasColumnType("varchar(255)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.ProviderKey)
-                    .HasColumnType("varchar(128)")
+                    .HasColumnType("varchar(255)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
@@ -354,12 +356,12 @@ namespace MiniProjet_alpha.Model
                     .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.LoginProvider)
-                    .HasColumnType("varchar(128)")
+                    .HasColumnType("varchar(255)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.Name)
-                    .HasColumnType("varchar(128)")
+                    .HasColumnType("varchar(255)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_general_ci");
 
@@ -578,13 +580,18 @@ namespace MiniProjet_alpha.Model
 
                 entity.Property(e => e.ClasseId).HasColumnType("int(11)");
 
-                entity.Property(e => e.Dateseance).HasColumnName("dateseance");
-
                 entity.Property(e => e.Heuredebut).HasColumnName("heuredebut");
 
                 entity.Property(e => e.Heurefin).HasColumnName("heurefin");
 
                 entity.Property(e => e.IdSalle).HasColumnType("int(11)");
+
+                entity.Property(e => e.Jourseance)
+                    .IsRequired()
+                    .HasColumnName("jourseance")
+                    .HasColumnType("longtext")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_general_ci");
 
                 entity.Property(e => e.ProfesseurId).HasColumnType("int(11)");
 

@@ -1,0 +1,64 @@
+@model MiniProjet_alpha.ViewModels.ProfesseurViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class=" border rounded border-success bg-primary">
+    <h1 class="display-4">Gestion des professeurs</h1>
+</div>
+<p style="margin-top: 40px;">
+    <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary">Ajouter un professeur</a>
+</p>
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
+        <tr>
+              <th>
+                @Html.DisplayNameFor(model => model.Professeur.Prenom)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Professeur.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Professeur.Matericule)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Professeur.Dateembauche)
+            </th>
+              <th>
+                @Html.DisplayName("Matière")
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Professeurs) {
+        <tr class="table-info">
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                   @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+             <td>
+                   @Html.DisplayFor(modelItem => item.Matericule)
+            </td>
+            @foreach (var items in Model.Matieres) 
+            {
+                if(items.IdMatiere == item.MatiereId)
+                {
+                     <td>
+                   @Html.DisplayFor(modelItem => items.Libelle)
+                    </td>
+                    break;
+                }
+            }
+            
+                                    <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProfesseur"class="btn btn-secondary">Modifier</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProfesseur"class="btn btn-secondary">Détails</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProfesseur"class="btn btn-danger">Supprimer</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

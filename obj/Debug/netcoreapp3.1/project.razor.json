@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\MiniProjet_alpha.csproj",
+  "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\MiniProjet_alpha.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,343 +20521,458 @@
   "RootNamespace": "MiniProjet_alpha",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Seance\\Details.cshtml",
-      "TargetPath": "Views\\Seance\\Details.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\DashboardProf\\TauxAbsMat.cshtml",
+      "TargetPath": "Views\\DashboardProf\\TauxAbsMat.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Error.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Etudiant\\Details.cshtml",
-      "TargetPath": "Views\\Etudiant\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Matiere\\Delete.cshtml",
-      "TargetPath": "Views\\Matiere\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Seance\\Create.cshtml",
-      "TargetPath": "Views\\Seance\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Matiere\\Details.cshtml",
-      "TargetPath": "Views\\Matiere\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Seance\\Index.cshtml",
-      "TargetPath": "Views\\Seance\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Etudiant\\Delete.cshtml",
-      "TargetPath": "Views\\Etudiant\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Etudiant\\Index.cshtml",
-      "TargetPath": "Views\\Etudiant\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Matiere\\Create.cshtml",
-      "TargetPath": "Views\\Matiere\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Filiere\\Delete.cshtml",
-      "TargetPath": "Views\\Filiere\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Filiere\\Create.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Filiere\\Create.cshtml",
       "TargetPath": "Views\\Filiere\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Professeur\\Edit.cshtml",
+      "TargetPath": "Views\\Professeur\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Salle\\Details.cshtml",
+      "TargetPath": "Views\\Salle\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Seance\\Delete.cshtml",
-      "TargetPath": "Views\\Seance\\Delete.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Classe\\Index.cshtml",
+      "TargetPath": "Views\\Classe\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Filiere\\Details.cshtml",
-      "TargetPath": "Views\\Filiere\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Filiere\\Edit.cshtml",
-      "TargetPath": "Views\\Filiere\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Matiere\\Edit.cshtml",
-      "TargetPath": "Views\\Matiere\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Filiere\\Index.cshtml",
-      "TargetPath": "Views\\Filiere\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Etudiant\\Edit.cshtml",
-      "TargetPath": "Views\\Etudiant\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Matiere\\Index.cshtml",
-      "TargetPath": "Views\\Matiere\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Home\\TauxAdminEtudiant.cshtml",
+      "TargetPath": "Views\\Home\\TauxAdminEtudiant.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Seance\\Edit.cshtml",
-      "TargetPath": "Views\\Seance\\Edit.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Filiere\\Delete.cshtml",
+      "TargetPath": "Views\\Filiere\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Seance\\Details.cshtml",
+      "TargetPath": "Views\\Seance\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Accueil\\Index.cshtml",
+      "TargetPath": "Views\\Accueil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Etudiant\\Edit.cshtml",
+      "TargetPath": "Views\\Etudiant\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Salle\\Delete.cshtml",
+      "TargetPath": "Views\\Salle\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Administrateur\\Edit.cshtml",
+      "TargetPath": "Views\\Administrateur\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Views\\Etudiant\\Create.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Matiere\\Create.cshtml",
+      "TargetPath": "Views\\Matiere\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Error.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Classe\\Details.cshtml",
+      "TargetPath": "Views\\Classe\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Seance\\Create.cshtml",
+      "TargetPath": "Views\\Seance\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Salle\\Edit.cshtml",
+      "TargetPath": "Views\\Salle\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Salle\\Index.cshtml",
+      "TargetPath": "Views\\Salle\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Seance\\Delete.cshtml",
+      "TargetPath": "Views\\Seance\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Administrateur\\Details.cshtml",
+      "TargetPath": "Views\\Administrateur\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Salle\\Create.cshtml",
+      "TargetPath": "Views\\Salle\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Matiere\\Details.cshtml",
+      "TargetPath": "Views\\Matiere\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Professeur\\Delete.cshtml",
+      "TargetPath": "Views\\Professeur\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\DashboardProf\\TauxAbsEtu.cshtml",
+      "TargetPath": "Views\\DashboardProf\\TauxAbsEtu.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Etudiant\\Details.cshtml",
+      "TargetPath": "Views\\Etudiant\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Etudiant\\Create.cshtml",
       "TargetPath": "Views\\Etudiant\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniProjet_alpha\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Matiere\\Edit.cshtml",
+      "TargetPath": "Views\\Matiere\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Filiere\\Edit.cshtml",
+      "TargetPath": "Views\\Filiere\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Etudiant\\Index.cshtml",
+      "TargetPath": "Views\\Etudiant\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Classe\\Edit.cshtml",
+      "TargetPath": "Views\\Classe\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Seance\\Index.cshtml",
+      "TargetPath": "Views\\Seance\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Matiere\\Index.cshtml",
+      "TargetPath": "Views\\Matiere\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\DashboardProf\\ListePresence.cshtml",
+      "TargetPath": "Views\\DashboardProf\\ListePresence.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Classe\\Create.cshtml",
+      "TargetPath": "Views\\Classe\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Matiere\\Delete.cshtml",
+      "TargetPath": "Views\\Matiere\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Seance\\Edit.cshtml",
+      "TargetPath": "Views\\Seance\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Filiere\\Details.cshtml",
+      "TargetPath": "Views\\Filiere\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Administrateur\\Delete.cshtml",
+      "TargetPath": "Views\\Administrateur\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Etudiant\\Delete.cshtml",
+      "TargetPath": "Views\\Etudiant\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Administrateur\\Index.cshtml",
+      "TargetPath": "Views\\Administrateur\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Professeur\\Details.cshtml",
+      "TargetPath": "Views\\Professeur\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Filiere\\Index.cshtml",
+      "TargetPath": "Views\\Filiere\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Professeur\\Index.cshtml",
+      "TargetPath": "Views\\Professeur\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Classe\\Delete.cshtml",
+      "TargetPath": "Views\\Classe\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Views\\Home\\TauxAdmin.cshtml",
+      "TargetPath": "Views\\Home\\TauxAdmin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ELMOUKTAFI\\Desktop\\EMSI\\Online Studies\\MiniPROJETasp\\MiniProjet_alpha\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],

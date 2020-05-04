@@ -162,12 +162,10 @@ namespace MiniProjet_alpha.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("varchar(128) CHARACTER SET utf8mb4")
-                        .HasMaxLength(128);
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("varchar(128) CHARACTER SET utf8mb4")
-                        .HasMaxLength(128);
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -204,12 +202,10 @@ namespace MiniProjet_alpha.Migrations
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("varchar(128) CHARACTER SET utf8mb4")
-                        .HasMaxLength(128);
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("Name")
-                        .HasColumnType("varchar(128) CHARACTER SET utf8mb4")
-                        .HasMaxLength(128);
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
 
                     b.Property<string>("Value")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -224,6 +220,9 @@ namespace MiniProjet_alpha.Migrations
                     b.Property<int>("IdAbsance")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("DateAbsance")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<int>("EstAbsant")
                         .HasColumnType("int");
@@ -424,14 +423,15 @@ namespace MiniProjet_alpha.Migrations
                     b.Property<int>("ProfesseurId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("dateseance")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<TimeSpan>("heuredebut")
                         .HasColumnType("time(6)");
 
                     b.Property<TimeSpan>("heurefin")
                         .HasColumnType("time(6)");
+
+                    b.Property<string>("jourseance")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("IdSeance");
 

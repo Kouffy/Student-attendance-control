@@ -1,53 +1,84 @@
-@model MiniProjet_alpha.Model.Seance
+@model MiniProjet_alpha.ViewModels.SeanceViewModel
 
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Modifier</h1>
 
-<h4>Products</h4>
+<h4>Gestion des séances</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <input type="hidden" asp-for="IdSeance" />
+                        <input type="hidden" asp-for="seance.IdSeance" />
             <div class="form-group">
-                <label asp-for="Dateseance" class="control-label"></label>
-                <input asp-for="Dateseance" class="form-control" />
-                <span asp-validation-for="Dateseance" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Heuredebut" class="control-label"></label>
-                <input asp-for="Heuredebut" class="form-control" />
-                <span asp-validation-for="Heuredebut" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Heurefin" class="control-label"></label>
-                <input asp-for="Heurefin" class="form-control" />
-                <span asp-validation-for="Heurefin" class="text-danger"></span>
-            </div>
-             <div class="form-group">
-                <label asp-for="ClasseId" class="control-label"></label>
-                <input asp-for="ClasseId" class="form-control" />
-                <span asp-validation-for="ClasseId" class="text-danger"></span>
-            </div>
-                         <div class="form-group">
-                <label asp-for="ProfesseurId" class="control-label"></label>
-                <input asp-for="ProfesseurId" class="form-control" />
-                <span asp-validation-for="ProfesseurId" class="text-danger"></span>
+                <label asp-for="seance.Jourseance" class="control-label"></label>
+                   <select asp-for="seance.Jourseance"  class="form-control">
+                        <option value="Monday">Lundi</option>
+                        <option value="Tuesday">Mardi</option>
+                        <option value="Wednesday">Mercredi</option>
+                        <option value="Thursday">Jeudi</option>
+                        <option value="Friday">Vendredi</option>
+                        <option value="Saturday">Samedi</option>
+                        <option value="Sunday">Dimanche</option>
+                </select>
+                <span asp-validation-for="seance.Jourseance" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="seance.Heuredebut" class="control-label"></label>
+                <input asp-for="seance.Heuredebut" class="form-control" />
+                <span asp-validation-for="seance.Heuredebut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="seance.Heurefin" class="control-label"></label>
+                <input asp-for="seance.Heurefin" class="form-control" />
+                <span asp-validation-for="seance.Heurefin" class="text-danger"></span>
+            </div>
+             
+            <div class="form-group">
+                <label asp-for="seance.ProfesseurId" class="control-label"></label>
+                <select asp-for="seance.ProfesseurId"  class="form-control">
+                    @foreach (var item in Model.Professeurs)
+                    {
+                        <option value="@item.IdProfesseur">@item.Nom @item.Prenom</option>
+                    }
+                </select>
+                <span asp-validation-for="seance.ProfesseurId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="seance.ClasseId" class="control-label"></label>
+                <select asp-for="seance.ClasseId"  class="form-control">
+                    @foreach (var item in Model.Classes)
+                    {
+                        <option value="@item.IdClasse">@item.Libelle</option>
+                    }
+                </select>
+                <span asp-validation-for="seance.ClasseId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="seance.IdSalle" class="control-label"></label>
+                <select asp-for="seance.IdSalle"  class="form-control">
+                    @foreach (var item in Model.Salles)
+                    {
+                        <option value="@item.IdSalle">@item.Libelle</option>
+                    }
+                </select>
+                <span asp-validation-for="seance.IdSalle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
 </div>
 
 @section Scripts {

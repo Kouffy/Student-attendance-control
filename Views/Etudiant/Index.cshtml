@@ -1,32 +1,36 @@
-@model IEnumerable<MiniProjet_alpha.Model.Etudiant>
+@model MiniProjet_alpha.ViewModels.EtudiantViewModel
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
+<div class=" border rounded border-success bg-primary">
+    <h1 class="display-4">Gestion des étudiants</h1>
+</div>
+<p style="margin-top: 40px;">
+    <a asp-action="Create" class="btn btn-primary">Ajouter un étudiant</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
         <tr>
               <th>
-                @Html.DisplayNameFor(model => model.Prenom)
+                @Html.DisplayNameFor(model => model.Etudiant.Prenom)
             </th>
              <th>
-                @Html.DisplayNameFor(model => model.Nom)
+                @Html.DisplayNameFor(model => model.Etudiant.Nom)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Matricule)
+                @Html.DisplayNameFor(model => model.Etudiant.Matricule)
+            </th>
+              <th>
+                @Html.DisplayName("Classe")
             </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
+@foreach (var item in Model.Etudiants) {
+        <tr class="table-info">
             <td>
                 @Html.DisplayFor(modelItem => item.Prenom)
             </td>
@@ -36,10 +40,20 @@
              <td>
                    @Html.DisplayFor(modelItem => item.Matricule)
             </td>
-                                    <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEtudiant">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEtudiant">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEtudiant">Delete</a>
+            @foreach (var items in Model.Classes) 
+            {
+                if(items.IdClasse == item.ClasseIdClasse)
+                {
+                     <td>
+                   @Html.DisplayFor(modelItem => items.Libelle)
+                    </td>
+                    break;
+                }
+            }
+                            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdEtudiant" class="btn btn-secondary">Modifier</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEtudiant"class="btn btn-secondary">Détails</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEtudiant" class="btn btn-danger">Supprimer</a>
             </td>
         </tr>
 }

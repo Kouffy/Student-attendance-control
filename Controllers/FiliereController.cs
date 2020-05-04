@@ -1,16 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MiniProjet_alpha.Models;
 using Microsoft.EntityFrameworkCore;
 using MiniProjet_alpha.Model;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MiniProjet_alpha.Controllers
 {
-   public class FiliereController : Controller
+
+    [Authorize(Roles = RoleManagement.Adminuser)]
+    public class FiliereController : Controller
     {
         private readonly miniprojetContext _context;
         public FiliereController(miniprojetContext context)
@@ -21,7 +21,7 @@ namespace MiniProjet_alpha.Controllers
         {
             return View(await _context.Filiere.ToListAsync());
         }
-          public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -54,7 +54,7 @@ namespace MiniProjet_alpha.Controllers
             }
             return View(filiere);
         }
-        
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -100,7 +100,7 @@ namespace MiniProjet_alpha.Controllers
             }
             return View(filiere);
         }
-           // GET: Products/Delete/5
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -108,17 +108,16 @@ namespace MiniProjet_alpha.Controllers
                 return NotFound();
             }
 
-            var products = await _context.Filiere
+            var filieres = await _context.Filiere
                 .FirstOrDefaultAsync(m => m.IdFiliere == id);
-            if (products == null)
+            if (filieres == null)
             {
                 return NotFound();
             }
 
-            return View(products);
+            return View(filieres);
         }
 
-        // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -128,7 +127,7 @@ namespace MiniProjet_alpha.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
+
         private bool FiliereExists(int id)
         {
             return _context.Filiere.Any(e => e.IdFiliere == id);

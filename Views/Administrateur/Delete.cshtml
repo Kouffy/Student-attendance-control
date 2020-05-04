@@ -1,0 +1,42 @@
+@model MiniProjet_alpha.Model.Administrateur
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Supprimer</h1>
+
+<h3>Confirmer</h3>
+<div>
+    <h4>Gestion des administrateurs</h4>
+    <hr />
+     <dl class="row">
+   <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdAdministrateur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdAdministrateur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Prenom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Prenom)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+  
+        
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdAdministrateur" />
+        <input type="submit" value="Supprimer" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
+    </form>
+</div>

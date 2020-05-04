@@ -1,45 +1,56 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MiniProjet_alpha.Models;
 using Microsoft.EntityFrameworkCore;
 using MiniProjet_alpha.Model;
+using Microsoft.AspNetCore.Authorization;
+using MiniProjet_alpha.ViewModels;
 
 namespace MiniProjet_alpha.Controllers
 {
-   public class EtudiantController : Controller
+    [Authorize(Roles = RoleManagement.Adminuser)]
+    public class EtudiantController : Controller
     {
         private readonly miniprojetContext _context;
         public EtudiantController(miniprojetContext context)
         {
             _context = context;
+
         }
-        public async Task<IActionResult> Index()
+        public async Task <IActionResult> Index()
         {
-            return View(await _context.Etudiant.ToListAsync());
+             EtudiantViewModel mymodel = new EtudiantViewModel();
+            mymodel.Etudiants = await _context.Etudiant.ToListAsync();
+            mymodel.Classes =_context.Classe.ToList();
+            return View(mymodel);
         }
-         public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var etudiants = await _context.Etudiant
+            EtudiantViewModel mymodel = new EtudiantViewModel();
+            mymodel.Etudiant =  await _context.Etudiant
                 .FirstOrDefaultAsync(m => m.IdEtudiant == id);
-            if (etudiants == null)
+            mymodel.LibelleClasse =_context.Classe.Find(mymodel.Etudiant.ClasseIdClasse).Libelle;
+       
+            if (mymodel.Etudiant == null)
             {
                 return NotFound();
             }
 
-            return View(etudiants);
+            return View(mymodel);
         }
         public IActionResult Create()
         {
-            return View();
+            EtudiantViewModel mymodel = new EtudiantViewModel();
+            mymodel.Etudiant = new Model.Etudiant();
+            mymodel.Classes = _context.Classe.ToList();
+            return View(mymodel);
+
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -53,19 +64,20 @@ namespace MiniProjet_alpha.Controllers
             }
             return View(etudiant);
         }
-         public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
-            var etudiants = await _context.Etudiant.FindAsync(id);
-            if (etudiants == null)
+            EtudiantViewModel mymodel = new EtudiantViewModel();
+            mymodel.Etudiant = await _context.Etudiant.FindAsync(id);
+            mymodel.Classes = _context.Classe.ToList();
+            if (mymodel.Etudiant == null)
             {
                 return NotFound();
             }
-            return View(etudiants);
+            return View(mymodel);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -75,7 +87,6 @@ namespace MiniProjet_alpha.Controllers
             {
                 return NotFound();
             }
-
             if (ModelState.IsValid)
             {
                 try
@@ -105,13 +116,16 @@ namespace MiniProjet_alpha.Controllers
                 return NotFound();
             }
 
-            var etudiant = await _context.Etudiant
+            EtudiantViewModel mymodel = new EtudiantViewModel();
+            mymodel.Etudiant =  await _context.Etudiant
                 .FirstOrDefaultAsync(m => m.IdEtudiant == id);
-            if (etudiant == null)
+            mymodel.LibelleClasse =_context.Classe.Find(mymodel.Etudiant.ClasseIdClasse).Libelle;
+
+            if (mymodel.Etudiant == null)
             {
                 return NotFound();
             }
-            return View(etudiant);
+            return View(mymodel);
         }
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -122,7 +136,7 @@ namespace MiniProjet_alpha.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
+
         private bool EtudiantExists(int id)
         {
             return _context.Etudiant.Any(e => e.IdEtudiant == id);

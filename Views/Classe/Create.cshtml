@@ -1,0 +1,44 @@
+@model MiniProjet_alpha.ViewModels.ClasseViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="display-4">Ajouter une classe</h1>
+
+<h4>Gestion des classes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="classe.Libelle" class="control-label"></label>
+                <input asp-for="classe.Libelle" class="form-control" />
+                <span asp-validation-for="classe.Libelle" class="text-danger"></span>
+            </div>
+                            <div class="form-group">
+                <label asp-for="classe.FiliereIdFiliere" class="control-label"></label>
+                <select asp-for="classe.FiliereIdFiliere"  class="form-control">
+                    @foreach (var item in Model.Filieres)
+                    {
+                        <option value="@item.IdFiliere">@item.Libelle</option>
+                    }
+                </select>
+                <span asp-validation-for="classe.FiliereIdFiliere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>  
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

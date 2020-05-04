@@ -10,9 +10,9 @@ namespace MiniProjet_alpha.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdSeance { get; set; }
-        [Required(ErrorMessage = "La date de seance est obligatoire")]
-        public DateTime dateseance { get; set; }
-        [Required(ErrorMessage = "L'heure de debut est obligatoire")]
+        [Required(ErrorMessage = "Le jour de la seance est obligatoire")]
+        public string jourseance { get; set; }
+        [Required(ErrorMessage = "Le libelle  de debut est obligatoire")]
         [DataType(DataType.Time)]
         public TimeSpan heuredebut { get; set; }
         [Required(ErrorMessage = "L'heure de fin est obligatoire")]

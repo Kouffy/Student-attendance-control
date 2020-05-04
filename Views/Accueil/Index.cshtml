@@ -1,0 +1,46 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+<div>
+    
+    @if(SignInManager.IsSignedIn(User) && User.IsInRole(RoleManagement.Adminuser))
+    {
+         <div class="container" >
+                <div class="card">
+            <img class="card-img-top" src="~/imag/accesscontrol.png" >
+            <div class="card-body">
+                <h4 class="card-title">Bienvenue @User.Identity.Name!</h4>
+                <p class="card-text">Vous Etes un Administrateur</p>
+                <a class="btn btn-success btn-block" href="/Home/Index">Tableau de bord</a>
+            </div>
+        </div>
+         </div>
+    }
+    else if(SignInManager.IsSignedIn(User) && User.IsInRole(RoleManagement.Profuser))
+    {
+           
+                <div class="card">
+            <img class="card-img-top" src='~/imag/accesscontrol.png' >
+            <div class="card-body">
+                <h4 class="card-title">Bienvenue @User.Identity.Name!</h4>
+                <p class="card-text">Vous Etes un Professeur</p>
+                <a class="btn btn-success btn-block" href="/DashboardProf/ListePresence">Tableau de bord</a>
+            </div>
+        </div>
+     
+    }
+    else
+    {
+                
+                <div class="card">
+            <img class="card-img-top" src='~/imag/accesscontrol.png' >
+            <div class="card-body">
+                <h4 class="card-title">Bienvenue</h4>
+                <p class="card-text">Connecter Vous Pour Utiliser L'application</p>
+                <a class="btn btn-success btn-block" href="/Identity/Account/Login">Se Connecter</a>
+            </div>
+        </div>
+        
+    }
+   
+
+</div>

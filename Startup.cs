@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MiniProjet_alpha.Model;
+using Microsoft.AspNetCore.Http;
 
 namespace MiniProjet_alpha
 {
@@ -33,8 +34,15 @@ namespace MiniProjet_alpha
                     Configuration.GetConnectionString("DefaultConnection")));
                      services.AddDbContext<miniprojetContext>(options => options.UseMySql(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddIdentity<IdentityUser,IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+                services.ConfigureApplicationCookie(options =>
+{
+options.LoginPath = $"/Identity/Account/Login";
+options.LogoutPath = $"/Identity/Account/Logout";
+options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+});
+ services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddControllersWithViews();
            services.AddRazorPages();
         }
@@ -65,7 +73,7 @@ namespace MiniProjet_alpha
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Accueil}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
             

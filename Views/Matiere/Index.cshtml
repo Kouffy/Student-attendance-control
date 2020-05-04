@@ -5,13 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
+<div class=" border rounded border-success bg-primary">
+    <h1 class="display-4">Gestion des matières</h1>
+</div>
+<p style="margin-top: 40px;">
+    <a asp-action="Create" class="btn btn-primary">Ajouter une matière</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark"> 
         <tr>
               <th>
                 @Html.DisplayNameFor(model => model.IdMatiere)
@@ -23,7 +24,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="table-info">
             <td>
                 @Html.DisplayFor(modelItem => item.IdMatiere)
             </td>
@@ -31,9 +32,9 @@
                    @Html.DisplayFor(modelItem => item.Libelle)
             </td>
                         <td>
-                <a asp-action="Edit" asp-route-id="@item.IdMatiere">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdMatiere">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdMatiere">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdMatiere" class="btn btn-secondary">Modifier</a> |
+                <a asp-action="Details" asp-route-id="@item.IdMatiere" class="btn btn-secondary">Détails</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdMatiere" class="btn btn-danger">Supprimer</a>
             </td>
         </tr>
 }

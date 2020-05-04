@@ -1,4 +1,4 @@
-@model MiniProjet_alpha.Model.Seance
+@model MiniProjet_alpha.ViewModels.SeanceViewModel
 
 
 @{
@@ -6,52 +6,59 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Détails</h1>
 
 <div>
-    <h4>Fileres</h4>
+    <h4>Gestion des séances</h4>
     <hr />
     <dl class="row">
    <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdSeance)
+            @Html.DisplayNameFor(model => model.seance.IdSeance)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdSeance)
+            @Html.DisplayFor(model => model.seance.IdSeance)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.seance.Jourseance)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.seance.Jourseance)
+        </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.seance.Heuredebut)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.seance.Heuredebut)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Dateseance)
+            @Html.DisplayNameFor(model => model.seance.Heurefin)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Dateseance)
+            @Html.DisplayFor(model => model.seance.Heurefin)
+        </dd>
+                       </dd>
+           <dt class = "col-sm-2">
+            @Html.DisplayName("Professeur")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomProfesseur)
         </dd>
            <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Heuredebut)
+            @Html.DisplayName("Classe")
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Heuredebut)
+            @Html.DisplayFor(model => model.LibelleClasse)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Heurefin)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Heurefin)
-        </dd>
+                       </dd>
            <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClasseId)
+            @Html.DisplayName("Salle")
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClasseId)
-        </dd>
-                </dd>
-           <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProfesseurId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProfesseurId)
+            @Html.DisplayFor(model => model.LibelleSalle)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.IdSeance">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.seance.IdSeance" class="btn btn-primary">Modifier</a> |
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
 </div>

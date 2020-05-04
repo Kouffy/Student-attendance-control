@@ -1,4 +1,4 @@
-@model MiniProjet_alpha.Model.Etudiant
+@model MiniProjet_alpha.ViewModels.EtudiantViewModel
 
 
 @{
@@ -6,45 +6,45 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Détails</h1>
 
 <div>
-    <h4>Fileres</h4>
+    <h4>Gestion des étudiants</h4>
     <hr />
     <dl class="row">
    <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdEtudiant)
+            @Html.DisplayNameFor(model => model.Etudiant.IdEtudiant)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdEtudiant)
+            @Html.DisplayFor(model => model.Etudiant.IdEtudiant)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Prenom)
+            @Html.DisplayNameFor(model => model.Etudiant.Prenom)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Prenom)
+            @Html.DisplayFor(model => model.Etudiant.Prenom)
         </dd>
            <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nom)
+            @Html.DisplayNameFor(model => model.Etudiant.Nom)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nom)
+            @Html.DisplayFor(model => model.Etudiant.Nom)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Matricule)
+            @Html.DisplayNameFor(model => model.Etudiant.Matricule)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Matricule)
+            @Html.DisplayFor(model => model.Etudiant.Matricule)
         </dd>
            <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ClasseIdClasse)
+            @Html.DisplayName("Classe")
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ClasseIdClasse)
+            @Html.DisplayFor(model => model.LibelleClasse)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.IdEtudiant">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Etudiant.IdEtudiant">Modifier</a> |
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
 </div>

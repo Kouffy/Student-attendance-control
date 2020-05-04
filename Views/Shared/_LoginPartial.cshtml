@@ -3,24 +3,88 @@
 @inject UserManager<IdentityUser> UserManager
 
 <ul class="navbar-nav">
-@if (SignInManager.IsSignedIn(User))
+@if (SignInManager.IsSignedIn(User) && User.IsInRole(RoleManagement.Adminuser))
 {
     <li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Bienvenue @User.Identity.Name!</a>
     </li>
+
     <li class="nav-item">
-        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        <form  class="form-inline"  asp-controller="Etudiant" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Etudiants</button>
         </form>
     </li>
+        <li class="nav-item">
+        <form  class="form-inline" asp-controller="Filiere" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Filieres</button>
+        </form>
+    </li>
+        <li class="nav-item">
+        <form  class="form-inline" asp-controller="Matiere" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Matieres</button>
+        </form>
+    </li>
+        
+        <li class="nav-item">
+        <form  class="form-inline" asp-controller="Seance" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Seances</button>
+        </form>
+    </li>
+         <li class="nav-item">
+        <form  class="form-inline" asp-controller="Salle" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Salles</button>
+        </form>
+    </li>
+    
+         <li class="nav-item">
+        <form  class="form-inline" asp-controller="Classe" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Classes</button>
+        </form>
+    </li>
+         <li class="nav-item">
+        <form  class="form-inline" asp-controller="Professeur" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Professeurs</button>
+        </form>
+    </li>
+ 
+         <li class="nav-item">
+        <form  class="form-inline" asp-controller="Administrateur" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Gestion Des Administrateurs</button>
+        </form>
+    </li>
+    
+        <li class="nav-item">
+        <form  class="form-inline" asp-controller="Home" asp-action="Index" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Tableaux De Bord</button>
+        </form>
+    </li>
+        <li class="nav-item">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" >
+            <button  type="submit" class="nav-link btn btn-danger text-white">Se Deconnecter</button>
+        </form>
+    </li>
+}
+else if (SignInManager.IsSignedIn(User) && User.IsInRole(RoleManagement.Profuser))
+{
+   <li class="nav-item">
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+    </li>
+           <li class="nav-item">
+        <form  class="form-inline" asp-controller="DashboardProf" asp-action="ListePresence" >
+            <button  type="submit" class="nav-link btn btn-outline-secondary text-white">Tableaux De Bord</button>
+        </form>
+    </li>
+        <li class="nav-item">
+        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" >
+            <button  type="submit" class="nav-link btn btn-danger text-white">Se Deconnecter</button>
+        </form>
+    </li>
+
 }
 else
 {
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="nav-link btn-primary text-white" asp-area="Identity" asp-page="/Account/Login">Se Connecter</a>
     </li>
 }
 </ul>

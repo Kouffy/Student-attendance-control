@@ -1,11 +1,14 @@
-using System;
 using Microsoft.AspNetCore.Mvc;
 using MiniProjet_alpha.Model;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Linq;
+using MiniProjet_alpha.Models;
+using Microsoft.AspNetCore.Authorization;
+
 namespace MiniProjet_alpha.Controllers
 {
+    [Authorize(Roles = RoleManagement.Adminuser)]
     public class MatiereController : Controller
     {
         private readonly miniprojetContext _context;
@@ -13,12 +16,12 @@ namespace MiniProjet_alpha.Controllers
         {
             _context = context;
         }
-        
+
         public async Task<IActionResult> Index()
         {
             return View(await _context.Matiere.ToListAsync());
         }
-          public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -51,7 +54,7 @@ namespace MiniProjet_alpha.Controllers
             }
             return View(Matiere);
         }
-        
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -97,7 +100,7 @@ namespace MiniProjet_alpha.Controllers
             }
             return View(Matiere);
         }
-           
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -115,7 +118,7 @@ namespace MiniProjet_alpha.Controllers
             return View(matieres);
         }
 
-        
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -125,7 +128,7 @@ namespace MiniProjet_alpha.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
+
         private bool MatiereExists(int id)
         {
             return _context.Matiere.Any(e => e.IdMatiere == id);

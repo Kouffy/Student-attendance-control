@@ -1,0 +1,32 @@
+@model MiniProjet_alpha.Model.Salle
+
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Détails</h1>
+
+<div>
+    <h4>Gestion des salles</h4>
+    <hr />
+    <dl class="row">
+   <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdSalle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdSalle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Libelle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Libelle)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdSalle"class="btn btn-primary">Modifier</a> |
+    <a asp-action="Index" class="btn btn-success">Retourner vers la liste principale</a>
+</div>

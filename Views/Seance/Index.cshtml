@@ -1,40 +1,48 @@
-@model IEnumerable<MiniProjet_alpha.Model.Seance>
+@model MiniProjet_alpha.ViewModels.SeanceViewModel
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
+<div class=" border rounded border-success bg-primary">
+    <h1 class="display-4">Gestion des séances</h1>
+</div>
+<p style="margin-top: 40px;">
+    <a asp-action="Create" class="btn btn-primary">Ajouter une séance</a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover table-striped">
+    <thead class="thead-dark">
         <tr>
-              <th>
-                @Html.DisplayNameFor(model => model.Dateseance)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.Heuredebut)
-            </th>
             <th>
-                @Html.DisplayNameFor(model => model.Heurefin)
+                @Html.DisplayNameFor(model => model.seance.Jourseance)
             </th>
+
                 <th>
-                @Html.DisplayNameFor(model => model.ClasseId)
+                @Html.DisplayNameFor(model => model.seance.Heuredebut)
             </th>
-                   <th>
-                @Html.DisplayNameFor(model => model.ProfesseurId)
+
+            <th>
+                @Html.DisplayNameFor(model => model.seance.Heurefin)
+            </th>
+
+            <th>
+                @Html.DisplayName("Professeur")
+            </th>
+
+            <th>
+                @Html.DisplayName("Classe")
+            </th>
+
+             <th>
+                @Html.DisplayName("Salle")
             </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dateseance)
+@foreach (var item in Model.Seances) {
+        <tr class="table-info">
+             <td>
+                   @Html.DisplayFor(modelItem => item.Jourseance)
             </td>
             <td>
                    @Html.DisplayFor(modelItem => item.Heuredebut)
@@ -42,16 +50,45 @@
              <td>
                    @Html.DisplayFor(modelItem => item.Heurefin)
             </td>
-                 <td>
-                   @Html.DisplayFor(modelItem => item.ClasseId)
-            </td>
+
+             @foreach (var items in Model.Professeurs) 
+            {
+                if(items.IdProfesseur == item.ProfesseurId)
+                {
+                    <td>
+                   @Html.DisplayFor(modelItem => items.Prenom ) @Html.DisplayFor(modelItem => items.Nom )  
+                    </td>
+                    break;
+                }
+            }
+          
+            @foreach (var items in Model.Classes) 
+            {
+                if(items.IdClasse == item.ClasseId)
+                {
                        <td>
-                   @Html.DisplayFor(modelItem => item.ProfesseurId)
-            </td>
-                                    <td>
-                <a asp-action="Edit" asp-route-id="@item.IdSeance">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdSeance">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdSeance">Delete</a>
+                   @Html.DisplayFor(modelItem => items.Libelle)
+                   </td>
+                    break;
+                }
+            }
+           
+           
+                 @foreach (var items in Model.Salles) 
+            {
+                if(items.IdSalle == item.IdSalle)
+                {
+                      <td>
+                   @Html.DisplayFor(modelItem => items.Libelle)
+                   </td>
+                    break;
+                }
+            }
+            
+              <td>
+                <a asp-action="Edit" asp-route-id="@item.IdSeance" class="btn btn-secondary">Modifier</a> |
+                <a asp-action="Details" asp-route-id="@item.IdSeance" class="btn btn-secondary">Détails</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdSeance" class="btn btn-secondary">Supprimer</a>
             </td>
         </tr>
 }
